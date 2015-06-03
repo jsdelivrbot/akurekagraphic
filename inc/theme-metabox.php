@@ -22,7 +22,7 @@ add_action( 'cmb2_init', 'argcom_slideshow_metaboxes' );
 
     $slideshow = new_cmb2_box( array(
       'id'            => 'slideshow_metabox',
-      'title'         => __( 'Slideshow Detail', 'ukmtheme' ),
+      'title'         => __( 'Slideshow Detail', 'argcom' ),
       'object_types'  => array( 'slideshow' ),
       'context'       => 'normal',
       'priority'      => 'high',
@@ -30,30 +30,30 @@ add_action( 'cmb2_init', 'argcom_slideshow_metaboxes' );
     ) );
 
     $slideshow->add_field( array(
-      'name'    => __( 'Image', 'ukmtheme' ),
-      'desc'    => __( 'Upload an image or enter a URL. dimensions of the image should be 1920x750 pixels. <a href="'. get_template_directory_uri() .'/img/960_350.psd">PSD File</a>', 'ukmtheme' ),
+      'name'    => __( 'Image', 'argcom' ),
+      'desc'    => __( 'Dimensions of the image should be 1920x750 pixels.', 'argcom' ),
       'id'      => $prefix . 'slideshow_image',
       'type'    => 'file',
       'allow'   => array('url'),
     ) );
 
     $slideshow->add_field( array(
-      'name'    => __( 'Caption', 'ukmtheme' ),
-      'desc'    => __( 'Some caption for the image.', 'ukmtheme' ),
+      'name'    => __( 'Caption', 'argcom' ),
+      'desc'    => __( 'Some caption for the image.', 'argcom' ),
       'id'      => $prefix . 'slideshow_caption',
       'type'    => 'textarea',
     ) );
 
     $slideshow->add_field( array(
-      'name'    => __( 'Link', 'ukmtheme' ),
-      'desc'    => __( 'links to posts, pages or external web.', 'ukmtheme' ),
+      'name'    => __( 'Link', 'argcom' ),
+      'desc'    => __( 'links to posts, pages or external web.', 'argcom' ),
       'id'      => $prefix . 'slideshow_link',
       'type'    => 'text',
     ) );
     
     $slideshow->add_field( array(
-      'name'    => __( 'Hide Caption', 'ukmtheme' ),
-      'desc'    => __( 'Hide slideshow caption', 'ukmtheme' ),
+      'name'    => __( 'Hide Caption', 'argcom' ),
+      'desc'    => __( 'Hide slideshow caption', 'argcom' ),
       'id'      => $prefix . 'slideshow_caption_hide',
       'type'    => 'checkbox'
     ) );
@@ -69,7 +69,7 @@ add_action( 'cmb2_init', 'argcom_slideset_metaboxes' );
 
     $slideset = new_cmb2_box( array(
       'id'            => 'slideset_metabox',
-      'title'         => __( 'Slideset Detail', 'ukmtheme' ),
+      'title'         => __( 'Slideset Detail', 'argcom' ),
       'object_types'  => array( 'slideset', ),
       'context'       => 'normal',
       'priority'      => 'high',
@@ -77,16 +77,16 @@ add_action( 'cmb2_init', 'argcom_slideset_metaboxes' );
     ) );
 
     $slideset->add_field( array(
-      'name'    => __( 'Slideset Image', 'ukmtheme' ),
-      'desc'    => __( 'Upload an image or enter a URL. dimensions of the image should be 600x400 pixels. <a href="'. get_template_directory_uri() .'/img/960_350.psd">PSD File</a>', 'ukmtheme' ),
+      'name'    => __( 'Slideset Image', 'argcom' ),
+      'desc'    => __( 'Dimensions of the image should be 600x400 pixels.', 'argcom' ),
       'id'      => $prefix . 'slideset_image',
       'type'    => 'file',
       'allow'   => array('url'),
     ) );
 
     $slideset->add_field( array(
-      'name'    => __( 'Slideset Link', 'ukmtheme' ),
-      'desc'    => __( 'links to posts, pages or external web.', 'ukmtheme' ),
+      'name'    => __( 'Slideset Link', 'argcom' ),
+      'desc'    => __( 'links to posts, pages or external web.', 'argcom' ),
       'id'      => $prefix . 'slideset_link',
       'type'    => 'text',
     ) );

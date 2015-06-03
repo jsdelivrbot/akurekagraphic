@@ -31,6 +31,12 @@ add_action( 'after_setup_theme', 'argcom_theme_setup' );
     require_once get_template_directory() . '/inc/post-type-slideset.php';
     require_once get_template_directory() . '/inc/theme-metabox.php';
     
+    require_once get_template_directory() . 'inc/theme-update-checker.php';
+      new ThemeUpdateChecker(
+        'akurekagraphic-master',
+        'https://raw.githubusercontent.com/jrajalu/akurekagraphic/master/version.json'
+    );
+
   }
   
 add_action( 'wp_enqueue_scripts', 'argcom_theme_scripts' );

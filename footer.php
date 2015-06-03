@@ -6,6 +6,11 @@
  * 
  */
 ?>
+<footer class="footer">
+  <div class="wrap">
+    <p style="text-align: center;">Copyright &copy; <?php echo bloginfo( 'name' ); echo '&nbsp;'; echo date( 'Y' ); ?></p>
+  </div>
+</footer>
 <?php wp_footer(); ?>
 </body>
 </html>
