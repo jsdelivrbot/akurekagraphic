@@ -17,12 +17,20 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="header">
-  <div class="column">
+  <div class="column wrap">
     <div class="col-6-12">
-      
+      <a href="<?php echo bloginfo( 'url' ); ?>">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+      </a>
     </div>
     <div class="col-6-12">
-      
+      <?php
+        wp_nav_menu(array(
+          'theme_location'  => 'main',
+          'menu'            => 'Main Navigation',
+          'menu_class'      => 'main-nav'
+        ));
+      ?>     
     </div>
   </div>
 
