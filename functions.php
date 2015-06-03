@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'argcom_theme_setup' );
     require_once get_template_directory() . '/inc/post-type-slideset.php';
     require_once get_template_directory() . '/inc/theme-metabox.php';
     
-    require_once get_template_directory() . 'inc/theme-update-checker.php';
+    require_once get_template_directory() . '/inc/theme-update-notifier.php';
       new ThemeUpdateChecker(
         'akurekagraphic-master',
         'https://raw.githubusercontent.com/jrajalu/akurekagraphic/master/version.json'
