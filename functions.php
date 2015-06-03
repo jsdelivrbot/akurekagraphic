@@ -43,7 +43,6 @@ add_action( 'wp_enqueue_scripts', 'argcom_theme_scripts' );
     wp_enqueue_script( 'uikit', get_template_directory_uri() . '/lib/uikit/js/uikit.min.js', array(), '2.21.0', true );
     wp_enqueue_script( 'uikit-slideshow', get_template_directory_uri() . '/lib/uikit/js/components/slideshow.min.js', array(), '2.21.0', true );
     wp_enqueue_script( 'uikit-slider', get_template_directory_uri() . '/lib/uikit/js/components/slider.min.js', array(), '2.21.0', true );
-    wp_enqueue_script( 'uikit-slidenav', get_template_directory_uri() . '/lib/uikit/js/components/slidenav.min.js', array(), '2.21.0', true );
     // Theme Stylesheet
     wp_enqueue_style( 'uikit', get_template_directory_uri() . '/lib/uikit/css/uikit.almost-flat.min.css', array(), '2.21.0' );
     wp_enqueue_style( 'uikit-slideshow', get_template_directory_uri() . '/lib/uikit/css/components/slideshow.almost-flat.min.css', array(), '2.21.0' );
