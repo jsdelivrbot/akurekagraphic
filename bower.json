@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "uikit": "~2.21.0",
-    "CMB2": "https://github.com/WebDevStudios/CMB2.git#~2.0.8"
+    "CMB2": "https://github.com/WebDevStudios/CMB2.git#~2.0.8",
+    "TGM-Plugin-Activation": "https://github.com/TGMPA/TGM-Plugin-Activation.git#~2.4.2"
   }
 }

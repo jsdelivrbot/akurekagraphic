@@ -21,6 +21,12 @@ module.exports = function(grunt) {
         },
         {
           expand: true,
+          cwd: 'bower_components/TGM-Plugin-Activation',
+          src: 'class-tgm-plugin-activation.php',
+          dest: 'lib/tgm-plugin-activation'
+        },
+        {
+          expand: true,
           cwd: 'bower_components/uikit',
           src: '**',
           dest: 'lib/uikit'
