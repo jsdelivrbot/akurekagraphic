@@ -1,0 +1,119 @@
+/*
+Theme Name: AkuRekaGraphic
+Theme URI: https://jrajalu@github.com/jrajalu/akurekagraphic.git
+Version: 1.0.0
+Description: akurekagraphic website
+Author: Jamaludin Rajalu
+*/
+[class*="col-"] {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+.column {
+  width: 99.99%;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.col-1-12 {
+  width: 8.3325%;
+}
+.col-2-12 {
+  width: 16.665%;
+}
+.col-3-12 {
+  width: 24.9975%;
+}
+.col-4-12 {
+  width: 33.33%;
+}
+.col-5-12 {
+  width: 41.6625%;
+}
+.col-6-12 {
+  width: 49.995%;
+}
+.col-7-12 {
+  width: 58.3275%;
+}
+.col-8-12 {
+  width: 66.66%;
+}
+.col-9-12 {
+  width: 74.9925%;
+}
+.col-10-12 {
+  width: 83.325%;
+}
+.col-11-12 {
+  width: 91.6575%;
+}
+.col-12-12 {
+  width: 99.99%;
+}
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  [class*="col-"] {
+    width: 99.99%;
+    display: block;
+    float: none;
+  }
+  .column-sm {
+    padding: 10px;
+  }
+}
+[class*="sm-col-"] {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+.sm-col-1-12 {
+  width: 8.3325%;
+}
+.sm-col-2-12 {
+  width: 16.665%;
+}
+.sm-col-3-12 {
+  width: 24.9975%;
+}
+.sm-col-4-12 {
+  width: 33.33%;
+}
+.sm-col-5-12 {
+  width: 41.6625%;
+}
+.sm-col-6-12 {
+  width: 49.995%;
+}
+.sm-col-7-12 {
+  width: 58.3275%;
+}
+.sm-col-8-12 {
+  width: 66.66%;
+}
+.sm-col-9-12 {
+  width: 74.9925%;
+}
+.sm-col-10-12 {
+  width: 83.325%;
+}
+.sm-col-11-12 {
+  width: 91.6575%;
+}
+.sm-col-12-12 {
+  width: 99.99%;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}

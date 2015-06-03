@@ -1,0 +1,17 @@
+{
+  "name": "AkuRekaGraphic",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jrajalu/akurekagraphic",
+  "authors": [
+    "jrajalu <jrajalu@gmail.com>"
+  ],
+  "description": "akurekagraphic.com website",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "uikit": "~2.21.0",
+    "CMB2": "https://github.com/WebDevStudios/CMB2.git#~2.0.8"
+  }
+}

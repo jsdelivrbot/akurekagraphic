@@ -1,0 +1,29 @@
+{
+  "name": "AkuRekaGraphic",
+  "version": "1.0.0",
+  "description": "akurekagraphic website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jrajalu@github.com/jrajalu/akurekagraphic.git"
+  },
+  "author": "Jamaludin Rajalu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrajalu/akurekagraphic/issues"
+  },
+  "homepage": "https://github.com/jrajalu/akurekagraphic",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
