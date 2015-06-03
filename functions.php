@@ -29,9 +29,9 @@ add_action( 'wp_enqueue_scripts', 'argcom_theme_scripts' );
     
   }
   
-add_action( 'widgets_init', 'argcom_widgets' );
+add_action( 'widgets_init', 'argcom_theme_widgets' );
   
-  function argcom_widgets() {
+  function argcom_theme_widgets() {
 
     register_sidebar( array(
       'name'          => 'Main Sidebar',

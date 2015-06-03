@@ -16,3 +16,14 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<header class="header">
+  <div class="column">
+    <div class="col-6-12">
+      
+    </div>
+    <div class="col-6-12">
+      
+    </div>
+  </div>
+
+</header>
