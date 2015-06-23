@@ -18,8 +18,8 @@ $slideset = new WP_Query( $args ); ?>
   <div class="uk-slider-container">
     <div class="uk-slider uk-grid-width-medium-1-4">
     <?php if ( $slideset->have_posts() ) : while ( $slideset->have_posts() ) : $slideset->the_post(); ?>
-      <a href="<?php echo get_post_meta(get_the_ID(),'ut_slideset_link',true); ?>" title="<?php the_title(); ?>">
-        <img src="<?php echo get_post_meta(get_the_ID(),'ut_slideset_image',true); ?>" alt="<?php the_title(); ?>">
+      <a href="<?php echo get_post_meta(get_the_ID(),'argcom_slideset_link',true); ?>" title="<?php the_title(); ?>">
+        <img src="<?php echo get_post_meta(get_the_ID(),'argcom_slideset_image',true); ?>" alt="<?php the_title(); ?>">
       </a>
     <?php endwhile; else: ?>
       <a><img src="<?php echo get_template_directory_uri() . '/img/placeholder_slideset_a.svg'; ?>" alt=""></a>
