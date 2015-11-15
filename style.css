@@ -1,14 +1,7 @@
 /*
 Theme Name: akurekagraphic
 Theme URI: https://jrajalu@github.com/jrajalu/akurekagraphic.git
-Version: 1.0.2
-Description: akurekagraphic website
-Author: Jamaludin Rajalu
-*/
-/*
-Theme Name: akurekagraphic
-Theme URI: https://jrajalu@github.com/jrajalu/akurekagraphic.git
-Version: 1.0.2
+Version: 1.0.3
 Description: akurekagraphic website
 Author: Jamaludin Rajalu
 */
@@ -120,6 +113,18 @@ Author: Jamaludin Rajalu
 .sm-col-12-12 {
   width: 99.99%;
 }
+.pad-top {
+  padding-top: 20px;
+}
+.pad-right {
+  padding-right: 20px;
+}
+.pad-bottom {
+  padding-bottom: 20px;
+}
+.pad-left {
+  padding-left: 20px;
+}
 .wrap {
   max-width: 960px;
   margin: 0 auto;
@@ -155,4 +160,63 @@ Author: Jamaludin Rajalu
 }
 .aside {
   padding: 20px 0 20px 0;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer,
+.page-wrap:after {
+  height: 100px;
+}
+.site-footer {
+  background: #E2E2E2;
+  color: #444;
+}
+.footer-content {
+  padding-top: 40px;
+}
+.flexslider {
+  margin: 0;
+}
+.flex-direction-nav a {
+  line-height: 40px;
+}
+.project-holder {
+  width: 26%;
+  float: left;
+  padding: 10px 30px 30px 0;
+  height: 200px;
+}
+.project-holder a,
+.project-holder a:visited,
+.project-holder a:hover {
+  color: #444;
+}
+.project-image {
+  border: 1px solid #636363;
+}
+.project-image-title {
+  padding: 10px 0 10px 0;
+}
+.widget {
+  padding: 30px 40px 30px 0;
+}
+.widget-page-list {
+  list-style-type: none;
+}
+.widget-page-list li ul {
+  padding-left: 20px;
 }

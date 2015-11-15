@@ -27,8 +27,10 @@ add_action( 'after_setup_theme', 'argcom_theme_setup' );
     
     add_filter( 'show_admin_bar', '__return_false' );
     
+    require_once get_template_directory() . '/inc/post-type-project.php';
     require_once get_template_directory() . '/inc/post-type-slideshow.php';
-    require_once get_template_directory() . '/inc/post-type-slideset.php';
+    // require_once get_template_directory() . '/inc/post-type-slideset.php';
+    require_once get_template_directory() . '/inc/theme-login.php';
     require_once get_template_directory() . '/inc/theme-metabox.php';
     require_once get_template_directory() . '/inc/theme-plugin.php';
     
@@ -49,12 +51,15 @@ add_action( 'wp_enqueue_scripts', 'argcom_theme_scripts' );
     // Theme Javascripts
     wp_enqueue_script( 'uikit', get_template_directory_uri() . '/lib/uikit/js/uikit.min.js', array(), '2.21.0', true );
     wp_enqueue_script( 'uikit-slideshow', get_template_directory_uri() . '/lib/uikit/js/components/slideshow.min.js', array(), '2.21.0', true );
+    wp_enqueue_script( 'flexslier', get_template_directory_uri() . '/lib/flexslider/jquery.flexslider-min.js', array(), '2.5.0', true );
     wp_enqueue_script( 'uikit-slider', get_template_directory_uri() . '/lib/uikit/js/components/slider.min.js', array(), '2.21.0', true );
+    wp_enqueue_script( 'theme', get_template_directory_uri() . '/js/scripts.min.js', array(), '1.0.0', true );
     // Theme Stylesheet
     wp_enqueue_style( 'uikit', get_template_directory_uri() . '/lib/uikit/css/uikit.almost-flat.min.css', array(), '2.21.0' );
     wp_enqueue_style( 'uikit-slideshow', get_template_directory_uri() . '/lib/uikit/css/components/slideshow.almost-flat.min.css', array(), '2.21.0' );
     wp_enqueue_style( 'uikit-slider', get_template_directory_uri() . '/lib/uikit/css/components/slider.almost-flat.min.css', array(), '2.21.0' );
     wp_enqueue_style( 'uikit-slidenav', get_template_directory_uri() . '/lib/uikit/css/components/slidenav.almost-flat.min.css', array(), '2.21.0' );
+    wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/lib/flexslider/flexslider.css', false, '2.5.0' );
     wp_enqueue_style( 'theme', get_stylesheet_uri(), array(), '1.0.0' );
     
   }

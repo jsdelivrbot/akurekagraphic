@@ -42,7 +42,7 @@ function argcom_slideshow() {
     'show_in_menu'        => true,
     'show_in_nav_menus'   => false,
     'show_in_admin_bar'   => false,
-    //'menu_position'     => 20,
+    'menu_position'     => 5,
     'menu_icon'           => 'dashicons-format-image',
     'can_export'          => true,
     'has_archive'         => true,

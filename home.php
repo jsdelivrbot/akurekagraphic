@@ -7,5 +7,5 @@
  */
 get_header(); ?>
   <?php get_template_part( 'templates/component', 'slideshow'); ?>
-  <?php get_template_part( 'templates/component', 'slideset'); ?>
+  <?php // get_template_part( 'templates/component', 'slideset'); ?>
 <?php get_footer(); ?>

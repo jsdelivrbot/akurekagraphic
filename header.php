@@ -16,6 +16,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<div class="page-wrap" <?php if ( is_home() ) { echo 'style="background:#E2E2E2;"'; } else {/** home body background */} ?>>
 <header class="header">
   <div class="column wrap">
     <div class="col-6-12">

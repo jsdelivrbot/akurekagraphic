@@ -34,14 +34,7 @@ add_action( 'cmb2_init', 'argcom_slideshow_metaboxes' );
       'desc'    => __( 'Dimensions of the image should be 1920x750 pixels.', 'argcom' ),
       'id'      => $prefix . 'slideshow_image',
       'type'    => 'file',
-      'allow'   => array('url'),
-    ) );
-
-    $slideshow->add_field( array(
-      'name'    => __( 'Caption', 'argcom' ),
-      'desc'    => __( 'Some caption for the image.', 'argcom' ),
-      'id'      => $prefix . 'slideshow_caption',
-      'type'    => 'textarea',
+      'allow'   => array( 'url' ),
     ) );
 
     $slideshow->add_field( array(
@@ -50,13 +43,7 @@ add_action( 'cmb2_init', 'argcom_slideshow_metaboxes' );
       'id'      => $prefix . 'slideshow_link',
       'type'    => 'text',
     ) );
-    
-    $slideshow->add_field( array(
-      'name'    => __( 'Hide Caption', 'argcom' ),
-      'desc'    => __( 'Hide slideshow caption', 'argcom' ),
-      'id'      => $prefix . 'slideshow_caption_hide',
-      'type'    => 'checkbox'
-    ) );
+
   }
 
 // Post Type: Slideset
@@ -90,4 +77,34 @@ add_action( 'cmb2_init', 'argcom_slideset_metaboxes' );
       'id'      => $prefix . 'slideset_link',
       'type'    => 'text',
     ) );
+  }
+  
+ // PROJECTS
+  
+add_action( 'cmb2_init', 'argcom_register_project_metabox' );
+
+  function argcom_register_project_metabox() {
+
+    $prefix = '_argcom_';
+
+    $cmb_project = new_cmb2_box( array(
+      'id'            => $prefix . 'project',
+      'title'         => __( 'Slide Details', 'argcom' ),
+      'object_types'  => array( 'project' ),
+    ) );
+
+    $cmb_project->add_field( array(
+      'name' => __( 'Main Image', 'argcom' ),
+      'desc' => __( 'Upload an image or enter a URL.', 'argcom' ),
+      'id'   => $prefix . 'project_image',
+      'type' => 'file',
+    ) );
+    
+    $cmb_project->add_field( array(
+      'name' => 'Project Image',
+      'desc' => '',
+      'id'   => $prefix . 'project_image_list',
+      'type' => 'file_list',
+    ) );
+    
   }

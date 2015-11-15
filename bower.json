@@ -1,6 +1,6 @@
 {
   "name": "akurekagraphic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/jrajalu/akurekagraphic",
   "authors": [
     "jrajalu <jrajalu@gmail.com>"
@@ -11,8 +11,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "uikit": "~2.21.0",
-    "CMB2": "https://github.com/WebDevStudios/CMB2.git#~2.0.8",
-    "TGM-Plugin-Activation": "https://github.com/TGMPA/TGM-Plugin-Activation.git#~2.4.2"
+    "uikit": "~2.23.0",
+    "CMB2": "https://github.com/WebDevStudios/CMB2.git#~2.1.2",
+    "TGM-Plugin-Activation": "https://github.com/TGMPA/TGM-Plugin-Activation.git#~2.5.2",
+    "flexslider": "~2.5.0"
   }
 }

@@ -27,6 +27,12 @@ module.exports = function(grunt) {
         },
         {
           expand: true,
+          cwd: 'bower_components/flexslider',
+          src: '**',
+          dest: 'lib/flexslider'
+        },
+        {
+          expand: true,
           cwd: 'bower_components/uikit',
           src: '**',
           dest: 'lib/uikit'
@@ -133,7 +139,15 @@ module.exports = function(grunt) {
     clean: {
       css: ['css/*.css', '!css/*.min.css', 'img/*.css'],
       js: ['js/*.js', '!js/*.min.js'],
-      cmb2: ['lib/cmb2/tests', 'lib/cmb2/languages/*.po', 'lib/cmb2/languages/*.mo', '!lib/cmb2/*.pot', '!lib/cmb2/*.php', 'lib/cmb2/coverage.clover'],
+      cmb2:   [
+              'lib/cmb2/css/sass',
+              'lib/cmb2/tests',
+              'lib/cmb2/languages/*.po',
+              'lib/cmb2/languages/*.mo',
+              '!lib/cmb2/*.pot',
+              '!lib/cmb2/*.php',
+              'lib/cmb2/coverage.clover'
+              ],
       uikit:  [
               'lib/uikit/scss',
               'lib/uikit/less',
@@ -146,6 +160,14 @@ module.exports = function(grunt) {
               '!lib/uikit/css/*.almost-flat.min.css',
               'lib/uikit/css/components/*.css',
               '!lib/uikit/css/components/*.almost-flat.min.css'
+              ],
+      flexslider: [
+              'lib/flexslider/css',
+              'lib/flexslider/demo',
+              'lib/flexslider/*.md',
+              'lib/flexslider/*.less',
+              'lib/flexslider/*.txt',
+              'lib/flexslider/*.json'
               ]
     }
     
@@ -163,10 +185,12 @@ module.exports = function(grunt) {
 
   // execute grunt task
   
-  grunt.registerTask('build', ['copy', 'less', 'uglify', 'cssmin', 'usebanner']);
+  grunt.registerTask('start', ['copy', 'less', 'uglify', 'cssmin', 'usebanner']);
 
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('run', ['watch']);
 
-  grunt.registerTask('final', ['clean']);
+  grunt.registerTask('finish', ['clean']);
+  
+  grunt.registerTask('all', ['start', 'finish']);
 
 };
