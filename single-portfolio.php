@@ -15,7 +15,7 @@ get_header(); ?>
       <div id="slider" class="flexslider">
         <ul class="slides">
           <?php while( have_posts() ) : the_post(); ?>
-            <?php argcom_project_slide( '_argcom_project_image_list', 'full' ); ?>
+            <?php argcom_portfolio_slide( '_argcom_portfolio_image_list', 'full' ); ?>
           <?php endwhile; ?>
         </ul>
       </div>
@@ -23,7 +23,7 @@ get_header(); ?>
       <div id="carousel" class="flexslider">
         <ul class="slides">
           <?php while( have_posts() ) : the_post(); ?>
-            <?php argcom_project_carousel( '_argcom_project_image_list', 'full' ); ?>
+            <?php argcom_portfolio_carousel( '_argcom_portfolio_image_list', 'full' ); ?>
           <?php endwhile; ?>
         </ul>
       </div>
@@ -33,8 +33,8 @@ get_header(); ?>
     <ul class="widget-page-list">
       <?php 
         $args = array(
-          'post_type' => 'project',
-          'title_li'  => '<h3> '. __( 'Projects' ) .' </h3>'
+          'post_type' => 'portfolio',
+          'title_li'  => '<h3> '. __( 'Portfolios' ) .' </h3>'
         );
         wp_list_pages( $args ); 
       ?>

@@ -27,7 +27,7 @@ add_action( 'after_setup_theme', 'argcom_theme_setup' );
     
     add_filter( 'show_admin_bar', '__return_false' );
     
-    require_once get_template_directory() . '/inc/post-type-project.php';
+    require_once get_template_directory() . '/inc/post-type-portfolio.php';
     require_once get_template_directory() . '/inc/post-type-slideshow.php';
     // require_once get_template_directory() . '/inc/post-type-slideset.php';
     require_once get_template_directory() . '/inc/theme-login.php';

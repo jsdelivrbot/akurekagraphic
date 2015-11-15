@@ -1,7 +1,7 @@
 /*
 Theme Name: akurekagraphic
 Theme URI: https://jrajalu@github.com/jrajalu/akurekagraphic.git
-Version: 1.0.3
+Version: 1.0.4
 Description: akurekagraphic website
 Author: Jamaludin Rajalu
 */
@@ -194,21 +194,21 @@ body {
 .flex-direction-nav a {
   line-height: 40px;
 }
-.project-holder {
+.portfolio-holder {
   width: 26%;
   float: left;
   padding: 10px 30px 30px 0;
   height: 200px;
 }
-.project-holder a,
-.project-holder a:visited,
-.project-holder a:hover {
+.portfolio-holder a,
+.portfolio-holder a:visited,
+.portfolio-holder a:hover {
   color: #444;
 }
-.project-image {
+.portfolio-image {
   border: 1px solid #636363;
 }
-.project-image-title {
+.portfolio-image-title {
   padding: 10px 0 10px 0;
 }
 .widget {

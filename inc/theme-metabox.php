@@ -81,29 +81,29 @@ add_action( 'cmb2_init', 'argcom_slideset_metaboxes' );
   
  // PROJECTS
   
-add_action( 'cmb2_init', 'argcom_register_project_metabox' );
+add_action( 'cmb2_init', 'argcom_register_portfolio_metabox' );
 
-  function argcom_register_project_metabox() {
+  function argcom_register_portfolio_metabox() {
 
     $prefix = '_argcom_';
 
-    $cmb_project = new_cmb2_box( array(
-      'id'            => $prefix . 'project',
+    $cmb_portfolio = new_cmb2_box( array(
+      'id'            => $prefix . 'portfolio',
       'title'         => __( 'Slide Details', 'argcom' ),
-      'object_types'  => array( 'project' ),
+      'object_types'  => array( 'portfolio' ),
     ) );
 
-    $cmb_project->add_field( array(
+    $cmb_portfolio->add_field( array(
       'name' => __( 'Main Image', 'argcom' ),
       'desc' => __( 'Upload an image or enter a URL.', 'argcom' ),
-      'id'   => $prefix . 'project_image',
+      'id'   => $prefix . 'portfolio_image',
       'type' => 'file',
     ) );
     
-    $cmb_project->add_field( array(
+    $cmb_portfolio->add_field( array(
       'name' => 'Project Image',
       'desc' => '',
-      'id'   => $prefix . 'project_image_list',
+      'id'   => $prefix . 'portfolio_image_list',
       'type' => 'file_list',
     ) );
     

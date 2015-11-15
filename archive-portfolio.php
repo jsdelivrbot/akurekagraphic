@@ -12,7 +12,7 @@ get_header(); ?>
       <div class="column">
         <?php
           $args = array(
-            'post_type'               => 'project',
+            'post_type'               => 'portfolio',
             'posts_per_archive_page'  => -1,
             'order'                   => 'ASC',
             'orderby'                 => 'title'
@@ -21,11 +21,11 @@ get_header(); ?>
           $query = new WP_Query( $args );
 
           while( $query->have_posts() ) : $query->the_post(); ?>
-          <div class="project-holder">
-            <div class="project-image">
-              <img src="<?php echo get_post_meta(get_the_ID(),'_argcom_project_image',true); ?>">
+          <div class="portfolio-holder">
+            <div class="portfolio-image">
+              <img src="<?php echo get_post_meta(get_the_ID(),'_argcom_portfolio_image',true); ?>">
             </div>
-            <div class="project-image-title">
+            <div class="portfolio-image-title">
               <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
             </div>
           </div>
@@ -37,8 +37,8 @@ get_header(); ?>
     <ul class="widget-page-list">
       <?php 
         $args = array(
-          'post_type' => 'project',
-          'title_li'  => '<h3> '. __( 'Projects' ) .' </h3>'
+          'post_type' => 'portfolio',
+          'title_li'  => '<h3> '. __( 'Portfolios' ) .' </h3>'
         );
         wp_list_pages( $args ); 
       ?>
