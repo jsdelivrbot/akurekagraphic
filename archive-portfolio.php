@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="wrap column pad-top pad-bottom">
   <div id="primary" class="content-area col-8-12">
     <div id="content" class="site-content pad-right" role="main">
-      <h1><?php _e( 'Projects', 'argcom' ); ?></h1>
+      <h1><?php _e( 'Portfolios', 'argcom' ); ?></h1>
       <!-- slider -->
       <div class="column">
         <?php
